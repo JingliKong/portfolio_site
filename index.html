@@ -1,91 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Jingli Kong</title>
-  <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Pure CSS Framework: Two Column Layout Example</title>
 
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Hind+Madurai:wght@300&family=PT+Serif&display=swap" rel="stylesheet">
-  <!-- FONTS -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device, user-scalable=no">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="purecssframework.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<body>
+<body class="" id="body">
+    <header class="main-container header fixed">
 
-  <header>
-    <h1>Jingli Kong</h1>
-  </header>
-  <div>
-    <section>
-      <h2>Brave new world</h2>
+        <!-- Nav Bar with Logo Area -->
+        <div class="flex-grid navbar">
+            <!-- Mobile Menu -->
+            <input type="checkbox" id="mobileMenu" class="hide">
+            <label id="mobileMenuLabel" class="mobile-menu left-side" for="mobileMenu">
+                <i class="hamburger"></i>
+            </label>
+            <label class="full-screen" for="mobileMenu"></label>
 
-      <p>It's a brave new world out there. Our children are being put in increasing more competitive situations, both during recreation, and as they start to move into the adult world of <a href="https://en.wikipedia.org/wiki/Examination">examinations</a>, <a href="https://en.wikipedia.org/wiki/Jobs">jobs</a>, <a href="https://en.wikipedia.org/wiki/Career">careers</a>, and other life choices. Having the wrong mindset, becoming <a href="https://en.wikipedia.org/wiki/Emotion">too emotional</a>, or making the wrong choices can contribute to them experiencing difficulty in taking their rightful place in today's ideal society.</p>
+            <div class="col-2 logo">
+                <a href="">Home</a>
+            </div>
 
-      <p>As concerned parents, guardians or carers, you will no doubt want to give your children the best possible start in life — and you've come to the right place.</p>
+            <nav class="col-10" id="topMenuNav">
+                <div class="navbar-links">
+                    <input type="radio" class="hide" name="navbar-menu" id="navbarDropHide" checked>
+                </div>
+            </nav>
+        </div>
 
-      <h2>The best start in life</h2>
+    </header>
+    <div class="fixed-nav-space" id="top"></div>
 
-      <p>At St. Huxley's, we pride ourselves in not only giving our students a top quality education, but also giving them the societal and emotional intelligence they need to win big in the coming utopia. We not only excel at subjects such as genetics, data mining, and chemistry, but we also include compulsory lessons in:</p>
+    <div class="main-container">
+        <div class="flex-grid">
+            <div class="col-9">
+                <section id="about">
+                    <div class="dbl-lined-header">
+                        <h1>Jingli Kong</h1>
+                        <small>"If you work hard you will be successful" - Martin Shkreli</small>
+                    </div>
+                    <p>
+                        I am a junior developer passionate about writing clear and concise code. Previously, I worked as
+                        a Software Engineering Intern at <a href="https://www.inspiresleep.com/en-us/">Inspire Medical
+                            Systems</a> in embedded firmware test and integration,
+                        where I developed automated, instrumented functional requirements tests. Previously I worked in
+                        test and integration at <a href="https://www.sensata.com/">Sensata Technologies</a> where I
+                        worked on an internal CAN monitor and learned about
+                        embedded systems communication protocols like CAN J1939 and UDS protocol.
+                    </p>
+                    <p>In my spare time I enjoy resistance training, listening to <a
+                            href="https://www.youtube.com/@RenaissancePeriodization">Mike Israetel</a>'s YouTube channel
+                        and playing <a href="https://en.wikipedia.org/wiki/Go_(game)">Go</a>.</p>
+                </section>
 
-      <ul>
-        <li>Emotional control</li>
-        <li>Judgement</li>
-        <li>Assertion</li>
-        <li>Focus and resolve</li>
-      </ul>
+                <br>
+                <h4 style="text-align: center;">Work Experience</h4>
 
-      <p>If you are interested, then you next steps will likely be to:</p>
+                <div class="resume-card">
+                    <div class="card-header">
+                        <a href="https://www.inspiresleep.com/en-us/">
+                            <h2 class="title">Software Engineering Intern at Inspire Medical Systems</h2>
+                        </a>
+                    </div>
+                    <span class="dates-worked">May 2024 - August 2024</span>
+                    <p class="description">
+                    <ul>
+                        <li>Developed and executed verification and validation tests in Python for firmware requirements
+                            of the Inspire® Implantable Pulse Generator (IPG).</li>
+                        <li>Automated testing of embedded firmware requirements using Oscilloscope and USB-205 DAQ,
+                            ensuring comprehensive coverage.</li>
+                        <li>Investigated and resolved malfunctions on the Inspire® IPG test board, improving system
+                            reliability.</li>
+                        <li>Built an internal software tool that aggregated Jira, Aligned Elements, and Python test
+                            scripts to streamline FDA software validation reporting.</li>
+                        <li>Led training sessions for new hires, introducing them to the technology stack, Python test
+                            suite, and embedded system setup.</li>
+                        <li>Authored thorough documentation for onboarding new hires and supporting ongoing project
+                            continuity.</li>
+                    </ul>
+                    </p>
+                    <div class="tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">PyTest Framework</span>
+                        <span class="tag">Firmware Test and Integration</span>
+                        <span class="tag">Instrumented Testing (oscilloscope)</span>
+                    </div>
+                </div>
 
-      <ol>
-        <li><a href="#">Call us</a> for more information</li>
-        <li><a href="#">Ask for a brochure</a>, which includes signup form</li>
-        <li><a href="#">Book a visit</a>!</li>
-      </ol>
-    </section>
+                <div class="resume-card">
+                    <div class="card-header">
+                        <a href="https://www.sensata.com/">
+                            <h2 class="title">Software Engineering Intern at Sensata Technologies</h2>
+                        </a>
+                    </div>
+                    <span class="dates-worked">May 2024 - August 2024</span>
+                    <p class="description">
+                    <ul>
+                        <li>Enhanced and maintained the CAN Joystick Monitor, a testing tool used for software
+                            validation of Sensata Technologies Joysticks, enabling collaboration among electrical and
+                            mechanical engineers</li>
+                        <li>CAN Monitor UI and backend were implemented in C# using .NET framework</li>
+                        <li>Implemented communication protocols adhering to CAN J1939 and UDS standards</li>
+                    </ul>
+                    </p>
+                    <div class="tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">ASP.net Framework</span>
+                        <span class="tag">Firmware Test and Integration</span>
+                        <span class="tag">CAN J1939 Protocol</span>
+                        <span class="tag">UDS Protocol</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <aside>
-
-      <h2>Top course choices</h2>
-
-      <ul>
-        <li><a href="#">Genetic engineering</a></li>
-        <li><a href="#">Genetic mutation</a></li>
-        <li><a href="#">Organic Chemistry</a></li>
-        <li><a href="#">Pharmaceuticals</a></li>
-        <li><a href="#">Biochemistry with behaviour</a></li>
-        <li><a href="#">Pure biochemistry</a></li>
-        <li><a href="#">Data mining</a></li>
-        <li><a href="#">Computer security</a></li>
-        <li><a href="#">Bioinformatics</a></li>
-        <li><a href="#">Cybernetics</a></li>
-      </ul>
-
-      <p><a href="#">See more</a></p>
-
-    </aside>
-
-    <nav>
-
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Finding us</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Staff</a></li>
-        <li><a href="#">Media</a></li>
-        <li><a href="#">Prospectus</a></li>
-      </ul>
-
-    </nav>
-  </div>
-  <footer>
-
-    <p>&copy; 2016 St Huxley's Community College</p>
-
-  </footer>
-
+    <footer class="text-center">
+        <div class="line"></div>
+        <a href="#">Link 1</a> |
+        <a href="#">Link 2</a> |
+        <a href="#">Link 3</a> |
+        <a href="#">Link 4</a> |
+        <a href="#">Link 5</a>
+        <div class="spacer-md"></div>
+        <small>© All Rights Reserved.</small>
+    </footer>
 </body>
 
 </html>

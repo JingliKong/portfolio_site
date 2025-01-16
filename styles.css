@@ -1,0 +1,72 @@
+/* color pallet */
+:root {
+  --text: #050315;
+  --background: #fbfbfe;
+  --primary: #2f27ce;
+  --secondary: #dedcff;
+  --accent: #433bff;
+}
+/* Card for each job on resume */
+.resume-card {
+
+  background-color: var(--background);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 100%;
+  border: 1px solid var(--secondary);
+  /* adding transition for hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
+}
+
+
+.resume-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.card-header {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.dates-worked {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.title {
+  font-size: 18px;
+  color: var(--primary);
+  margin: 0;
+}
+
+.description {
+  font-size: 14px;
+  color: var(--text);
+  margin: 10px 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background-color: var(--secondary);
+  border: 1px solid var(--primary);
+  border-radius: 16px;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: var(--primary);
+}
+
+.col-9 {
+  margin-left: 20%; /* Matches the width of .col-3 */
+  padding: 20px; /* Add padding for spacing */
+}
