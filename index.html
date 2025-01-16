@@ -5,18 +5,26 @@
     <title>Pure CSS Framework: Two Column Layout Example</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device, user-scalable=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta charset="UTF-8">
+
 
     <link rel="stylesheet" type="text/css" href="purecssframework.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
 </head>
 
 <body class="" id="body">
+
     <header class="main-container header fixed">
 
         <!-- Nav Bar with Logo Area -->
-        <div class="flex-grid navbar">
+        <div class="flex-grid  navbar">
+
             <!-- Mobile Menu -->
             <input type="checkbox" id="mobileMenu" class="hide">
             <label id="mobileMenuLabel" class="mobile-menu left-side" for="mobileMenu">
@@ -25,26 +33,65 @@
             <label class="full-screen" for="mobileMenu"></label>
 
             <div class="col-2 logo">
-                <a href="">Home</a>
+                Home
             </div>
 
             <nav class="col-10" id="topMenuNav">
                 <div class="navbar-links">
-                    <input type="radio" class="hide" name="navbar-menu" id="navbarDropHide" checked>
+                    <!-- <input type="radio" class="hide" name="navbar-menu" id="navbarDropHide" checked>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+
+                    <div class="has-drop-menu hover-menu">
+                        <input type="radio" id="navbarDropLinkSoon" class="drop-menu-input hide" name="navbar-menu">
+                        <label for="navbarDropLinkSoon" class="menu-label"></label>
+                        Drop Link <i class="arrow-down"></i>
+                        <label class="full-screen" for="navbarDropHide"></label>
+                        <ul class="drop-menu">
+                            <li><a href="#">Drop Link 1</a></li>
+                            <li><a href="#">Drop Link 2</a></li>
+                            <li><a href="#">Drop Link 3</a></li>
+                            <li><a href="#">Drop Link 4</a></li>
+                        </ul>
+
+                    </div> -->
+
                 </div>
+
             </nav>
+
         </div>
 
     </header>
     <div class="fixed-nav-space" id="top"></div>
 
+
     <div class="main-container">
-        <div class="flex-grid">
-            <div class="col-9">
+
+        <div class="flex-grid ">
+
+            <div class="col-3">
+                <nav class="nav-side">
+                    <div class="nav-side-item">
+                        <a href="#">About</a>
+                    </div>
+                    <div class="nav-side-item">
+                        <a href="#">Experience</a>
+                    </div>
+                    <div class="nav-side-item">
+                        <a href="#">Projects</a>
+                    </div>
+
+                </nav>
+            </div>
+
+            <div class="col-6">
                 <section id="about">
                     <div class="dbl-lined-header">
                         <h1>Jingli Kong</h1>
-                        <small>"If you work hard you will be successful" - Martin Shkreli</small>
+                        <small>"We didn't realize we were making memories. We just knew we were having fun." - Winnie The Pooh</small>
                     </div>
                     <p>
                         I am a junior developer passionate about writing clear and concise code. Previously, I worked as
@@ -60,9 +107,9 @@
                         and playing <a href="https://en.wikipedia.org/wiki/Go_(game)">Go</a>.</p>
                 </section>
 
+                
                 <br>
                 <h4 style="text-align: center;">Work Experience</h4>
-
                 <div class="resume-card">
                     <div class="card-header">
                         <a href="https://www.inspiresleep.com/en-us/">
@@ -94,7 +141,6 @@
                         <span class="tag">Instrumented Testing (oscilloscope)</span>
                     </div>
                 </div>
-
                 <div class="resume-card">
                     <div class="card-header">
                         <a href="https://www.sensata.com/">
@@ -120,19 +166,71 @@
                     </div>
                 </div>
             </div>
+            <div class="col-3" style="background-color:#eee;">
+				<section id="skills">
+                    <div class="dbl-lined-header">
+                        <h2>Skills</h2>
+                        <hr>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-category">
+                            <h3>Programming Languages</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>C/C++</li>
+                                <li>JavaScript</li>
+                                <li>SQL</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Frameworks & Tools</h3>
+                            <ul>
+                                <li>PureCSS</li>
+                                <li>Flask</li>
+                                <li>ASP.NET</li>
+                                <li>PyTest</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Embedded Systems</h3>
+                            <ul>
+                                <li>Firmware Test & Integration</li>
+                                <li>CAN J1939</li>
+                                <li>UDS Protocol</li>
+                                <li>RTOS Development</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Other Skills</h3>
+                            <ul>
+                                <li>Statistical Modeling</li>
+                                <li>Data Visualization</li>
+                                <li>Project Documentation</li>
+                                <li>Collaboration with Cross-functional Teams</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+			</div>
+            
         </div>
+
     </div>
 
     <footer class="text-center">
+
         <div class="line"></div>
-        <a href="#">Link 1</a> |
-        <a href="#">Link 2</a> |
-        <a href="#">Link 3</a> |
-        <a href="#">Link 4</a> |
-        <a href="#">Link 5</a>
+
+        <a href="https://www.linkedin.com/in/jinglikong/">Linkedin</a> |
+        <a href="https://github.com/JingliKong">Github</a> 
+
+
         <div class="spacer-md"></div>
         <small>© All Rights Reserved.</small>
+
+
     </footer>
+
 </body>
 
 </html>

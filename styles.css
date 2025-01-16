@@ -65,8 +65,3 @@
   font-size: 12px;
   color: var(--primary);
 }
-
-.col-9 {
-  margin-left: 20%; /* Matches the width of .col-3 */
-  padding: 20px; /* Add padding for spacing */
-}
