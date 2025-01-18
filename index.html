@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="purecssframework.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 
@@ -20,7 +20,6 @@
 <body class="" id="body">
 
     <header class="main-container header fixed">
-
         <!-- Nav Bar with Logo Area -->
         <div class="flex-grid  navbar">
 
@@ -40,26 +39,29 @@
                     <input type="radio" class="hide" name="navbar-menu" id="navbarDropHide" checked>
                     <a href="#about">About</a>
                     <a href="#experience">Experience</a>
-                    <a href="#projects">Projects</a>
-                    <!-- <div class="has-drop-menu hover-menu">
+                    <!-- <a href="#projects">Projects</a> -->
+                    
+                    <!-- Projects drop down menu -->
+                    <div class="has-drop-menu hover-menu">
                         <input type="radio" id="navbarDropLinkSoon" class="drop-menu-input hide" name="navbar-menu">
+
                         <label for="navbarDropLinkSoon" class="menu-label"></label>
-                        Drop Link <i class="arrow-down"></i>
+                        Projects <i class="arrow-down"></i>
+
                         <label class="full-screen" for="navbarDropHide"></label>
                         <ul class="drop-menu">
-                            <li><a href="#">Drop Link 1</a></li>
-                            <li><a href="#">Drop Link 2</a></li>
-                            <li><a href="#">Drop Link 3</a></li>
-                            <li><a href="#">Drop Link 4</a></li>
+                            <li><a href="cloth_sim.html">Cloth Simulation</a></li>
+                            <li><a href="pinball.html">PinBall Game</a></li>
+                            <li><a href="fluid_sim.html">Fluid Simulation</a></li>
+                            <li><a href="inverse_kinematics.html">Inverse Kinematics</a></li>
                         </ul>
-                    </div>  -->
+                    </div>
 
                 </div>
 
             </nav>
-
         </div>
-
+    <!-- end of nav -->
     </header>
     <div class="fixed-nav-space" id="top"></div>
 
@@ -162,11 +164,11 @@
                 </section>
                 <section id="projects">
                     <h1 style="text-align: center;"><strong>Recent Projects</strong></h1>
-                    
+
                     <!-- Cloth simulation -->
-                    <a href="google.com" class="project-card-link">
+                    <a href="cloth_sim.html" class="project-card-link">
                         <div class="project-card">
-                            <img src="a.png" alt="Project Image" class="project-image">
+                            <img src="assets/cloth_simulation/cloth.png" alt="Project Image" class="project-image">
                             <div class="project-content">
                                 <h3>Cloth Simulation</h3>
                                 <p>Simulates cloth via a mesh of nodes connected by springs</p>
@@ -174,10 +176,21 @@
                         </div>
                     </a>
 
-                    <!-- Pinball game -->
-                    <a href="google.com" class="project-card-link">
+                    <!-- inverse kinematics -->
+                    <a href="inverse_kinematics.html" class="project-card-link">
                         <div class="project-card">
-                            <img src="a.png" alt="Project Image" class="project-image">
+                            <img src="assets\inverse_kinematics\game_screenshot.png" alt="Project Image" class="project-image">
+                            <div class="project-content">
+                                <h3>Inverse kinematics</h3>
+                                <p>Simulates cloth via a mesh of nodes connected by springs</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Pinball game -->
+                    <a href="pinball.html" class="project-card-link">
+                        <div class="project-card">
+                            <img src="assets/pinball/pinball_game.png" alt="Project Image" class="project-image">
                             <div class="project-content">
                                 <h3>PinBall Game</h3>
                                 <p>Simulates cloth via a mesh of nodes connected by springs</p>
@@ -186,17 +199,19 @@
                     </a>
 
                     <!-- SPH Fluid Simulation -->
-                    <a href="google.com" class="project-card-link">
+                    <a href="fluid_sim.html" class="project-card-link">
                         <div class="project-card">
-                            <img src="a.png" alt="Project Image" class="project-image">
+                            <img src="assets/fluid_simulation/fluid_sim.png" alt="Project Image" class="project-image">
                             <div class="project-content">
                                 <h3>SPH Fluid Simulation</h3>
-                                <p>Used a weighted kernel to  calculate forces being applied to each particle to simulate water.</p>
+                                <p>Used a weighted kernel to calculate forces being applied to each particle to simulate
+                                    water.</p>
                             </div>
                         </div>
                     </a>
-                      
                     
+
+
                 </section>
                 <!-- end of col 7 -->
             </div>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jingli Kong Resume</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset="UTF-8">
+
+
+    <link rel="stylesheet" type="text/css" href="purecssframework.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- p5js -->
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+
+    <!-- Game script -->
+    <script src="assets/pinball/sketch.js"></script>
+
+</head>
+
+<body class="" id="body">
+    <header class="main-container header fixed">
+        <!-- Nav Bar with Logo Area -->
+        <div class="flex-grid  navbar">
+            <!-- Mobile Menu -->
+            <input type="checkbox" id="mobileMenu" class="hide">
+            <label id="mobileMenuLabel" class="mobile-menu left-side" for="mobileMenu">
+                <i class="hamburger"></i>
+            </label>
+            <label class="full-screen" for="mobileMenu"></label>
+
+            <div class="col-2 logo">
+                <a href="index.html">Home</a>
+            </div>
+
+            <nav class="col-10" id="topMenuNav">
+                <div class="navbar-links">
+                    <input type="radio" class="hide" name="navbar-menu" id="navbarDropHide" checked>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#experience">Experience</a>
+                    <!-- <a href="#projects">Projects</a> -->
+
+                    <!-- Projects drop down menu -->
+                    <div class="has-drop-menu hover-menu">
+                        <input type="radio" id="navbarDropLinkSoon" class="drop-menu-input hide" name="navbar-menu">
+
+                        <label for="navbarDropLinkSoon" class="menu-label"></label>
+                        Projects <i class="arrow-down"></i>
+
+                        <label class="full-screen" for="navbarDropHide"></label>
+                        <ul class="drop-menu">
+                            <li><a href="cloth_sim.html">Cloth Simulation</a></li>
+                            <li><a href="pinball.html">PinBall Game</a></li>
+                            <li><a href="fluid_sim.html">Fluid Simulation</a></li>
+                            <li><a href="inverse_kinematics.html">Inverse Kinematics</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    <!-- end of nav -->
+    </header>
+    <div class="fixed-nav-space" id="top"></div>
+    <div class="main-container">
+        <div class="flex-grid ">
+
+            <div class="col-6">
+                
+                <div id="pinball_game" style="justify-content: center; align-items: center;">
+                    <!-- sketch being rendered here -->
+                  </div>
+            </div>
+                    
+            <div class="col-6" style="background-color:#eee;">
+                <section id="skills">
+                    <div class="dbl-lined-header">
+                        <h2>Description</h2>
+                        <hr>
+                    </div>
+                    <div class="skills-list">
+                        <h3>Tech Stack</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>HTML5</li>
+                            <li>CSS3/SCSS</li>
+                        </ul>
+                        <h3>Features</h3>
+                        <ul>
+                            <li>Circle Obstacles</li>
+                            <li>Collision Detection (Line-Segment Balls)</li>
+                            <li>Plunger Launcher</li>
+                            <li>Textured background and obstacles</li>
+                            <li>Score display</li>
+                            <li>Flippers</li>
+                            <li>Sound effects</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+
+        <div class="line"></div>
+
+        <a href="https://www.linkedin.com/in/jinglikong/">Linkedin</a> |
+        <a href="https://github.com/JingliKong">Github</a>
+
+
+        <div class="spacer-md"></div>
+        <small>© All Rights Reserved.</small>
+
+
+    </footer>
+
+</body>
+
+</html>

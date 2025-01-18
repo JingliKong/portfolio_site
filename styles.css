@@ -125,3 +125,16 @@
   color: inherit;        /* Inherit text color */
   display: block;        /* Ensure the link behaves like a block element */
 }
+
+/* p5js  */
+canvas {
+  display: block;
+}
+
+#sketch-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Optional if you want to control vertical spacing: */
+  /* height: 800px; */ 
+}
