@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Pure CSS Framework: Two Column Layout Example</title>
+    <title>Jingli Kong Resume</title>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no">
@@ -11,8 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="purecssframework.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-
-
+    
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 
@@ -38,13 +37,11 @@
 
             <nav class="col-10" id="topMenuNav">
                 <div class="navbar-links">
-                    <!-- <input type="radio" class="hide" name="navbar-menu" id="navbarDropHide" checked>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                    <a href="#">Link 4</a>
-
-                    <div class="has-drop-menu hover-menu">
+                    <input type="radio" class="hide" name="navbar-menu" id="navbarDropHide" checked>
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <!-- <div class="has-drop-menu hover-menu">
                         <input type="radio" id="navbarDropLinkSoon" class="drop-menu-input hide" name="navbar-menu">
                         <label for="navbarDropLinkSoon" class="menu-label"></label>
                         Drop Link <i class="arrow-down"></i>
@@ -55,8 +52,7 @@
                             <li><a href="#">Drop Link 3</a></li>
                             <li><a href="#">Drop Link 4</a></li>
                         </ul>
-
-                    </div> -->
+                    </div>  -->
 
                 </div>
 
@@ -67,31 +63,25 @@
     </header>
     <div class="fixed-nav-space" id="top"></div>
 
-
     <div class="main-container">
-
         <div class="flex-grid ">
-
-            <div class="col-3">
-                <nav class="nav-side">
-                    <div class="nav-side-item">
-                        <a href="#">About</a>
+            <div class="col-2">
+                <section id="contact">
+                    <div class="dbl-lined-header">
+                        <h4>Contact</h4>
                     </div>
-                    <div class="nav-side-item">
-                        <a href="#">Experience</a>
-                    </div>
-                    <div class="nav-side-item">
-                        <a href="#">Projects</a>
-                    </div>
-
-                </nav>
+                    <p><strong>Email:</strong> <a href="jinglikong2828@gmail.com">jinglikong2828@gmail.com</a></p>
+                    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jinglikong/">Link</a></p>
+                    <p><strong>Address:</strong>Minneapolis, MN</p>
+                </section>
             </div>
 
-            <div class="col-6">
+            <div class="col-7">
                 <section id="about">
                     <div class="dbl-lined-header">
                         <h1>Jingli Kong</h1>
-                        <small>"We didn't realize we were making memories. We just knew we were having fun." - Winnie The Pooh</small>
+                        <small>"We didn't realize we were making memories. We just knew we were having fun." - Winnie
+                            The Pooh</small>
                     </div>
                     <p>
                         I am a junior developer passionate about writing clear and concise code. Previously, I worked as
@@ -107,114 +97,153 @@
                         and playing <a href="https://en.wikipedia.org/wiki/Go_(game)">Go</a>.</p>
                 </section>
 
-                
+
                 <br>
-                <h4 style="text-align: center;">Work Experience</h4>
-                <div class="resume-card">
-                    <div class="card-header">
-                        <a href="https://www.inspiresleep.com/en-us/">
-                            <h2 class="title">Software Engineering Intern at Inspire Medical Systems</h2>
-                        </a>
+                <section id="experience">
+                    <h1 style="text-align: center;"><strong>Work Experience</strong></h1>
+                    <div class="resume-card">
+                        <div class="card-header">
+                            <a href="https://www.inspiresleep.com/en-us/">
+                                <h2 class="title">Software Engineering Intern at Inspire Medical Systems</h2>
+                            </a>
+                        </div>
+                        <span class="dates-worked">May 2024 - August 2024</span>
+                        <p class="description">
+                        <ul>
+                            <li>Developed and executed verification and validation tests in Python for firmware
+                                requirements
+                                of the Inspire® Implantable Pulse Generator (IPG).</li>
+                            <li>Automated testing of embedded firmware requirements using Oscilloscope and USB-205 DAQ,
+                                ensuring comprehensive coverage.</li>
+                            <li>Investigated and resolved malfunctions on the Inspire® IPG test board, improving system
+                                reliability.</li>
+                            <li>Built an internal software tool that aggregated Jira, Aligned Elements, and Python test
+                                scripts to streamline FDA software validation reporting.</li>
+                            <li>Led training sessions for new hires, introducing them to the technology stack, Python
+                                test
+                                suite, and embedded system setup.</li>
+                            <li>Authored thorough documentation for onboarding new hires and supporting ongoing project
+                                continuity.</li>
+                        </ul>
+                        </p>
+                        <div class="tags">
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">PyTest Framework</span>
+                            <span class="tag">Firmware Test and Integration</span>
+                            <span class="tag">Instrumented Testing (oscilloscope)</span>
+                        </div>
                     </div>
-                    <span class="dates-worked">May 2024 - August 2024</span>
-                    <p class="description">
-                    <ul>
-                        <li>Developed and executed verification and validation tests in Python for firmware requirements
-                            of the Inspire® Implantable Pulse Generator (IPG).</li>
-                        <li>Automated testing of embedded firmware requirements using Oscilloscope and USB-205 DAQ,
-                            ensuring comprehensive coverage.</li>
-                        <li>Investigated and resolved malfunctions on the Inspire® IPG test board, improving system
-                            reliability.</li>
-                        <li>Built an internal software tool that aggregated Jira, Aligned Elements, and Python test
-                            scripts to streamline FDA software validation reporting.</li>
-                        <li>Led training sessions for new hires, introducing them to the technology stack, Python test
-                            suite, and embedded system setup.</li>
-                        <li>Authored thorough documentation for onboarding new hires and supporting ongoing project
-                            continuity.</li>
-                    </ul>
-                    </p>
-                    <div class="tags">
-                        <span class="tag">PostgreSQL</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">PyTest Framework</span>
-                        <span class="tag">Firmware Test and Integration</span>
-                        <span class="tag">Instrumented Testing (oscilloscope)</span>
+                    <div class="resume-card">
+                        <div class="card-header">
+                            <a href="https://www.sensata.com/">
+                                <h2 class="title">Software Engineering Intern at Sensata Technologies</h2>
+                            </a>
+                        </div>
+                        <span class="dates-worked">May 2024 - August 2024</span>
+                        <p class="description">
+                        <ul>
+                            <li>Enhanced and maintained the CAN Joystick Monitor, a testing tool used for software
+                                validation of Sensata Technologies Joysticks, enabling collaboration among electrical
+                                and
+                                mechanical engineers</li>
+                            <li>CAN Monitor UI and backend were implemented in C# using .NET framework</li>
+                            <li>Implemented communication protocols adhering to CAN J1939 and UDS standards</li>
+                        </ul>
+                        </p>
+                        <div class="tags">
+                            <span class="tag">C#</span>
+                            <span class="tag">ASP.net Framework</span>
+                            <span class="tag">Firmware Test and Integration</span>
+                            <span class="tag">CAN J1939 Protocol</span>
+                            <span class="tag">UDS Protocol</span>
+                        </div>
                     </div>
-                </div>
-                <div class="resume-card">
-                    <div class="card-header">
-                        <a href="https://www.sensata.com/">
-                            <h2 class="title">Software Engineering Intern at Sensata Technologies</h2>
-                        </a>
-                    </div>
-                    <span class="dates-worked">May 2024 - August 2024</span>
-                    <p class="description">
-                    <ul>
-                        <li>Enhanced and maintained the CAN Joystick Monitor, a testing tool used for software
-                            validation of Sensata Technologies Joysticks, enabling collaboration among electrical and
-                            mechanical engineers</li>
-                        <li>CAN Monitor UI and backend were implemented in C# using .NET framework</li>
-                        <li>Implemented communication protocols adhering to CAN J1939 and UDS standards</li>
-                    </ul>
-                    </p>
-                    <div class="tags">
-                        <span class="tag">C#</span>
-                        <span class="tag">ASP.net Framework</span>
-                        <span class="tag">Firmware Test and Integration</span>
-                        <span class="tag">CAN J1939 Protocol</span>
-                        <span class="tag">UDS Protocol</span>
-                    </div>
-                </div>
+                </section>
+                <section id="projects">
+                    <h1 style="text-align: center;"><strong>Recent Projects</strong></h1>
+                    
+                    <!-- Cloth simulation -->
+                    <a href="google.com" class="project-card-link">
+                        <div class="project-card">
+                            <img src="a.png" alt="Project Image" class="project-image">
+                            <div class="project-content">
+                                <h3>Cloth Simulation</h3>
+                                <p>Simulates cloth via a mesh of nodes connected by springs</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Pinball game -->
+                    <a href="google.com" class="project-card-link">
+                        <div class="project-card">
+                            <img src="a.png" alt="Project Image" class="project-image">
+                            <div class="project-content">
+                                <h3>PinBall Game</h3>
+                                <p>Simulates cloth via a mesh of nodes connected by springs</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- SPH Fluid Simulation -->
+                    <a href="google.com" class="project-card-link">
+                        <div class="project-card">
+                            <img src="a.png" alt="Project Image" class="project-image">
+                            <div class="project-content">
+                                <h3>SPH Fluid Simulation</h3>
+                                <p>Used a weighted kernel to  calculate forces being applied to each particle to simulate water.</p>
+                            </div>
+                        </div>
+                    </a>
+                      
+                    
+                </section>
+                <!-- end of col 7 -->
             </div>
             <div class="col-3" style="background-color:#eee;">
-				<section id="skills">
+                <section id="skills">
                     <div class="dbl-lined-header">
                         <h2>Skills</h2>
                         <hr>
                     </div>
                     <div class="skills-list">
-                        <div class="skill-category">
-                            <h3>Programming Languages</h3>
-                            <ul>
-                                <li>Python</li>
-                                <li>C/C++</li>
-                                <li>JavaScript</li>
-                                <li>SQL</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Frameworks & Tools</h3>
-                            <ul>
-                                <li>PureCSS</li>
-                                <li>Flask</li>
-                                <li>ASP.NET</li>
-                                <li>PyTest</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Embedded Systems</h3>
-                            <ul>
-                                <li>Firmware Test & Integration</li>
-                                <li>CAN J1939</li>
-                                <li>UDS Protocol</li>
-                                <li>RTOS Development</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Other Skills</h3>
-                            <ul>
-                                <li>Statistical Modeling</li>
-                                <li>Data Visualization</li>
-                                <li>Project Documentation</li>
-                                <li>Collaboration with Cross-functional Teams</li>
-                            </ul>
-                        </div>
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>HTML5</li>
+                            <li>CSS3/SCSS</li>
+                            <li>Golang</li>
+                            <li>Google Cloud Platform (Firebase)</li>
+                            <li>Rest API Development</li>
+                        </ul>
+                        <h3>Technologies/Frameworks</h3>
+                        <ul>
+                            <li>Python Flask</li>
+                            <li>ASP.NET</li>
+                            <li>PostgreSQL, MySql</li>
+                            <li>EmberJs</li>
+                        </ul>
+                        <h3>Embedded Systems</h3>
+                        <ul>
+                            <li>Firmware Test & Integration</li>
+                            <li>C Programming</li>
+                            <li>Familiarity with communication using UART, SPI, I2C</li>
+                            <li>CAN J1939</li>
+                            <li>UDS Protocol</li>
+                            <li>RTOS Development</li>
+                        </ul>
+                        <h3>Big Data and Machine Learning</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>PySpark</li>
+                            <li>Scikit-learn</li>
+                            <li>PyTorch, NumPy, Pandas, AND Matplotlib</li>
+                        </ul>
                     </div>
                 </section>
-			</div>
-            
-        </div>
+            </div>
 
+        </div>
     </div>
 
     <footer class="text-center">
@@ -222,7 +251,7 @@
         <div class="line"></div>
 
         <a href="https://www.linkedin.com/in/jinglikong/">Linkedin</a> |
-        <a href="https://github.com/JingliKong">Github</a> 
+        <a href="https://github.com/JingliKong">Github</a>
 
 
         <div class="spacer-md"></div>
